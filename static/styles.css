@@ -1,0 +1,213 @@
+label{
+    font-size:20px;
+    font-weight:500;
+
+}
+.my_container {
+  /*background-color: #ebecec;*/
+  padding: 20px 20px 15px 20px;
+  border: 7px solid #7ab3a3;
+  border-radius: 5px;
+}
+
+.font{
+    font-weight:600;
+
+
+}
+.dt{
+    color: #27595f;;
+}
+.curser{
+
+    cursor: pointer;
+
+}
+#read_more:hover{
+    color:#3d6358;
+}
+#read_more2:hover{
+    color:#3d6358;
+}
+#more {display: none;}
+#more2 {display: none;}
+.view{
+    margin-bottom:100px;
+    margin-top:40px;
+    background-color: #d3e8e9;
+
+
+}
+.card-header{
+font-size: 20px;
+}
+.pad{
+    padding-bottom:50px;
+}
+body {
+    background-image: url("https://images.unsplash.com/photo-1566421966482-ad8076104d8e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80");
+    background-color: #ffffff;
+    /* height: 500px; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.card-header{
+    font-family:cursive;
+    color:#1f5f4d;
+    background-color:#cceee4;
+    font-weight:900;
+}
+.carousel {
+    margin-top: 50px;
+    margin-bottom: 100px;
+
+    border: 15px solid rgb(144, 176, 177);
+    border-radius: 12px;
+    padding: 5px;
+    background-color: #dbe9e9;
+    padding:30px
+
+}
+.container{
+    margin-top: 100px;
+}
+.jumbotron {
+    /*box-shadow: 0 99999px 99999px 0 rgba(0, 255, 0, .25);*/
+    border: 2px solid #c9ece2;
+    background-color:none;
+
+}
+.img{
+
+    height:200px;
+}
+.checked {
+    color: orange;
+}
+h1{
+    padding-top:30px;
+
+    font-family:Sans-serif;
+}
+.center{
+
+    display: flex;
+    text-align: center;
+    margin: auto;
+    display: grid;
+}
+
+.text {
+    color:#5e9283;
+}
+.text:hover{
+    color:#3d6358;
+}
+.navbar {
+    background-color: #dcf0ea;
+}
+.nav-link
+{
+    font-size: 20px;
+}
+.jumbotron
+{
+    margin: 20px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+nav .navbar-brand
+{
+    /* size for brand */
+    font-size: xx-large;
+
+}
+
+/* Colors for brand */
+nav .navbar-brand
+{
+    color: #b9bcc5;
+    font-family: 'Frijole', cursive;
+}
+.btn {
+    background-color: #5e9283;
+    display: flex;
+    text-align: center;
+    margin: auto;
+    display: grid;
+    height: 60px;
+    font-family: "Sofia", sans-serif;
+    font-size: 30px;
+    text-shadow: 3px 3px 3px #ababab;
+    font-weight: 700;
+    border: 1px solid #697765;
+    color:#f2ffff;
+
+}
+header {
+
+    background-color: rgb(226, 186, 186);
+
+}
+.btn:hover {
+    border: 1px solid #c6ddbe;
+    background-color: #7ab3a3;
+}
+
+main .form-control
+{
+    /* Center form controls */
+    display: inline-block;
+
+    /* Override Bootstrap's 100% width for form controls */
+    width: auto;
+}
+
+main
+{
+    /* Scroll horizontally as needed */
+    overflow-x: auto;
+
+    /* Center contents */
+    /*text-align: center;*/
+}
+
+main img
+{
+    /* Constrain images on small screens */
+    max-width: 100%;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #CEE4FC;
+}
+
+.w-100{
+    height: 600px;
+}
+.text-size{
+    font-size: 25px ;
+}
+
+.padding {
+    padding: 5rem !important
+}
+
+.input-lg:focus {
+    box-shadow: 10px 0px 0px 0px #ffffff !important;
+    border-color: #4ca746
+}
