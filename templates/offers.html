@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+<h1 class="center"><b>Hotel Offers</b></h1>
+
+<div class="container">
+<div class="center">
+<div class="row row-cols-4 row-cols-md-3 g-6">
+  {%  for element in data_list %}
+  <div class="col col-md-4 col-sm-12 pad">
+
+    <div class="card h-100">
+        <div class="card-header">
+        {{element["hotel_name"]}}
+        <br>
+        {% if element["rating"]%}
+          {% for star in range(element["rating"]-1)%}
+            <span class="fa fa-star checked"></span>
+          {%endfor%}
+        {% else %}
+            <span>(No rating)</span>
+        {% endif %}
+        </div>
+        <div class="thumbnail">
+
+      <img  src="https://www.princehotels.com/wp-content/uploads/2019/04/aboutslider3-1.jpg"  class="card-img-top img" alt="...">
+      </div>
+      <div class="card-body">
+        <!--<h5 class="card-title">Card title</h5>-->
+
+
+        <p class="card-text">
+          <b>Adults: </b>{{element["adults"]}}<br>
+          <b>Rooms: </b>{{element["rooms"]}}<br>
+          <b>Duration: </b>{{element["days"]}} days<br>
+          <b>Price: </b><span class="text-success">{{element["price"]}} {{element["currency"]}}</span><br>
+          </p>
+      </div>
+      <div class="card-footer">
+        <form action="/offers" method="post">
+        <input type="hidden" id="custId" name="hotel_id" value="{{element['hotel_id']}}">
+        <!--<a href="#" class="btn btn-primary">Go somewhere</a>-->
+        <button class="btn" style="width:100%;" type="submit">View</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  {% endfor  %}
+
+</div>
+
+</div>
+</div>
+{% endblock %}

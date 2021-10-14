@@ -1,0 +1,78 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block main %}
+
+<div style="margin:50px;">
+    <div class="my_container">
+            <form action="/" method="post">
+
+                <div class="form-row align-items-center">
+
+                    <!--city code-->
+                    <div class="form-group col-md-4">
+                        <label for="inputCity">City Code</label>
+                        <input type="text" class="form-control" id="inputCity" name="city" required>
+                    </div>
+
+                    <!--checkin date-->
+                    <div class="form-group col-md-4">
+                        <label for="in_date">CheckIn date:</label>
+                        <input type="date" class="form-control" id="datein" name="checkin" required>
+                    </div>
+
+                    <!--checkout date-->
+                    <div class="form-group col-md-4">
+                        <label for="out_date">CheckOut date:</label>
+                        <input type="date" class="form-control" id="dateout" name="checkout" required>
+                    </div>
+
+                    <!--number of adults-->
+                    <div class=" form-group col-sm-6 col-md-4">
+                        <label for="adults">Adults:</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="adults">
+                          <option selected>Choose...</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                        </select>
+                      </div>
+
+                      <!--number of rooms-->
+                      <div class=" form-group col-sm-6 col-md-4">
+                        <label for="rooms">Rooms:</label>
+                        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect" name="rooms">
+                          <option selected>Choose...</option>
+                          <option value="1">1</option>
+                          <option value="2">2</option>
+                          <option value="3">3</option>
+                          <option value="4">4</option>
+                          <option value="5">5</option>
+                          <option value="6">6</option>
+                          <option value="7">7</option>
+                          <option value="8">8</option>
+                          <option value="9">9</option>
+                        </select>
+                      </div>
+
+                </div>
+
+                <!--submit buttom-->
+                <button class="btn col-md-2 my-2" type="submit">Search</button>
+
+            </form>
+    </div>
+
+</div>
+
+{% endblock %}
+
