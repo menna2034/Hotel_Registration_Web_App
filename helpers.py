@@ -28,8 +28,7 @@ def login_required(f):
 
 client_id_value = os.environ["CLIENT_ID"]
 client_secret_value = os.environ["CLIENT_SECRET"]
-# client_id_value = "rG9sV20xXC6xWbMkhiJtGoba94XSdILG"
-# client_secret_value = "8yvtiQQksASFIG1P"
+
 
 
 amadeus = Client(
@@ -76,7 +75,7 @@ def send_msg(email):
     url = "https://email-sender1.p.rapidapi.com/"
     
     api_key = os.environ["API_KEY"]
-    # api_key = "5fcf10a395msh21eb70319e145b4p10df28jsnf646df799623"	
+
 
     querystring = {"txt_msg":"Confirmation email","to":f"{email}","from":"Explore Vacation","subject":"Confirmation message","bcc":"bcc-mail@gmail.com","reply_to":"reply-to@gmail.com","html_msg":"<html><body><b>You have booked the hotel successfully</b><br><b>Enjoy your vacation🥳 🏄</b></body></html>","cc":"cc-mail@gmail.com"}
 

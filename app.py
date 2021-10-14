@@ -6,7 +6,6 @@ from werkzeug.exceptions import default_exceptions, HTTPException, InternalServe
 from werkzeug.security import check_password_hash, generate_password_hash
 from datetime import date, datetime
 import sqlite3 as sql
-
 from helpers import login_required, search, get_flash_error, today_date, return_date, send_msg, get_flash_success
 
 # Configure application
